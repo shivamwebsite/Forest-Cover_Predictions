@@ -7,16 +7,16 @@ A machine learning project that predicts the presence of heart disease using **L
 ## 📸 Screenshots
 
 ### 📊 Dataset Preview
-    <img src="assets/s1.png" alt="Dataset Head" width="600"/>
+<img src="assets/s1.png" alt="Dataset Head" width="600"/>
 
 ### 🔍 Data Cleaning & Correlation Heatmap
-    <img src="assets/s3.png" alt="Correlation Heatmap" width="600"/>
+<img src="assets/s3.png" alt="Correlation Heatmap" width="600"/>
 
 ### 🧠 Model Training & Accuracy
-    <img src="assets/s2.png" alt="Model Training Output" width="600"/>
+<img src="assets/s2.png" alt="Model Training Output" width="600"/>
 
 ### 🩺 Sample Prediction Output
-    <img src="assets/s4.png" alt="Sample Prediction" width="600"/>
+<img src="assets/s4.png" alt="Sample Prediction" width="600"/>
 
 ---
 
