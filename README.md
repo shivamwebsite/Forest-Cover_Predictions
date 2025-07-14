@@ -1,109 +1,108 @@
-# ❤️ Heart Disease Prediction using Machine Learning (Google Colab)
+# 🌲 Forest Cover Type Prediction using Machine Learning (Google Colab)
 
-A machine learning project that predicts the presence of heart disease using **Logistic Regression**. The project is built and executed entirely on **Google Colab** using **Python**, **pandas**, and **scikit-learn**.
-
----
-
-## 📸 Screenshots
-
-### 📊 Dataset Preview
-<img src="assets/s1.png" alt="Dataset Head" width="600"/>
-
-### 🔍 Data Cleaning & Correlation Heatmap
-<img src="assets/s3.png" alt="Correlation Heatmap" width="600"/>
-
-### 🧠 Model Training & Accuracy
-<img src="assets/s2.png" alt="Model Training Output" width="600"/>
-
-### 🩺 Sample Prediction Output
-<img src="assets/s4.png" alt="Sample Prediction" width="600"/>
+A machine learning project that predicts forest cover types based on cartographic variables using different ML models like **Logistic Regression**, **Decision Tree**, and **Random Forest**. After experimentation, **Random Forest** was found to give the best accuracy of **88.29%**.
 
 ---
 
 ## 🧠 Project Overview
 
-This notebook-based ML project aims to detect the possibility of heart disease based on patient data like age, sex, cholesterol level, blood pressure, etc. The dataset is analyzed and cleaned using `pandas`, followed by training a **Logistic Regression** model to make predictions.
+This project focuses on classifying the forest cover type (e.g., Spruce/Fir, Lodgepole Pine, etc.) using geographic and soil data. Multiple ML models were tested, and the **Random Forest classifier** yielded the highest accuracy.
 
 ---
 
 ## 📌 Features
 
-- ✔️ Data cleaning and exploration using `pandas`
-- ✔️ Model training and evaluation using `LogisticRegression`
-- ✔️ Predictions on custom input
-- ✔️ Visualization of results (optional)
-- ✔️ Runs entirely on **Google Colab** (no setup needed)
+    - Exploratory Data Analysis and Cleaning with **pandas**
+    - Model building with:
+      - Logistic Regression
+      - Decision Tree
+      - ✅ Random Forest (final)
+    - Evaluation with metrics like accuracy and confusion matrix
+    - Built and run entirely in **Google Colab**
 
 ---
 
 ## 📊 Dataset
 
-- **Source**: [UCI Machine Learning Repository - Heart Disease Dataset](https://github.com/shivamwebsite/Forest-Cover_Predictions)
-- **Attributes**:
-  - `age`, `sex`, `cp` (chest pain), `trestbps`, `chol`, `fbs`, `restecg`, `thalach`, `exang`, etc.
-- **Target**:
-  - `0`: No heart disease  
-  - `1`: Presence of heart disease
+    - **Source**: [UCI Forest CoverType Dataset](https://archive.ics.uci.edu/ml/datasets/Covertype)
+    - **Size**: 581,012 instances, 55 features
+    - **Target**: 7 types of forest cover (Multi-class classification)
+    - **Features**: Elevation, Aspect, Slope, Horizontal Distance to Hydrology, Soil Type, etc.
 
 ---
 
-## 📁 File Structure
+## 🏗️ Project Structure
 
-    ├── HeartDiseasePrediction.ipynb # Main Colab notebook
-    ├── heart.csv # Dataset file (uploaded in Colab)
+    ├── ForestCoverPrediction.ipynb # Main Colab notebook
+    ├── cover_data.csv # Dataset (uploaded to Colab)
     ├── assets/
-        └── accuracy_plot.png # (Optional) Accuracy or confusion matrix visuals
+     ├── accuracy_comparison.png
+     └── sample_prediction.png
+
+ 
+---
+
+## 📸 Screenshots
+
+### 📊 Model Accuracy Comparison
+<img src="assets/s1.png" alt="Accuracy Comparison" width="600"/>
+
+
+
+### 🔍 Prediction Output Sample
+<img src="assets/s2.png" alt="Prediction Output" width="600"/>
 
 ---
 
-## ▶️ How to Run on Google Colab
+## 🚀 Model Accuracy Results
 
-1. Open the Colab notebook:
-   
-       [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yourusername/heart-disease-prediction/blob/main/HeartDiseasePrediction.ipynb)
-
-3. Upload the dataset:
-   
-         - Make sure to upload `heart.csv` to the Colab runtime.
-
-4. Run the cells step by step:
-   
-       - Data preprocessing
-       - Model training
-       - Evaluation and prediction
+    | Model               | Accuracy  |
+    |-------------------- |------------|
+    | Logistic Regression | ~58%       |
+    | Decision Tree       | ~70%       |
+    | ✅ Random Forest    | **88.29%** |
 
 ---
 
-## 📈 Example Output
+## ▶️ Run on Google Colab
 
-Training Accuracy: 85.2%
-Confusion Matrix:
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yourusername/forest-cover-prediction/blob/main/ForestCoverPrediction.ipynb)
 
-          [[40 6]
-          [ 5 49]]
-
+    1. Upload the dataset (`train.csv`)
+    2. Run each cell in order
+    3. The notebook will show evaluation and predictions
 
 ---
 
-## 🧪 Technologies Used
+## ⚙️ Tech Stack
 
-    - Python 🐍
+    - Python
     - Google Colab
     - Pandas
     - Scikit-learn
     - NumPy
+    - Matplotlib & Seaborn (for visualization)
+
+---
+
+## 🧠 What I Learned
+
+    - Importance of feature preprocessing in large datasets
+    - Model comparison and parameter tuning
+    - Why Random Forest is often a better choice for high-dimensional data
+    - Evaluating multi-class classification models with confusion matrices
 
 ---
 
 ## 🙋‍♂️ Author
 
 **Shivam Shaw**
-
-
-    - [LinkedIn](linkedin.com/in/shivam-shaw-a9288a272)
+    
+    - [GitHub](https://github.com/shivamwebsite/Forest-Cover_Predictions)
+    - [LinkedIn](https://linkedin.com/in/shivam-shaw-a9288a272)
 
 ---
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+    This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
